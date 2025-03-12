@@ -1,0 +1,170 @@
+{
+	"server": {
+		"intercepts": {
+			"wiki*.org": {
+				".*": {
+					"sni": "mediawiki.org"
+				}
+			},
+			"*.wiki*.org": {
+				".*": {
+					"sni": "mediawiki.org"
+				}
+			},
+			"greasyfork.org": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			},
+			"*.akamaihd.net": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			},
+			"akamaihd.net": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			},
+			"*.steam*.com": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			},
+			"steam*.com": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			}
+		},
+		"dns": {
+			"mapping": {
+				"github.com": "local",
+				"api.dandanplay.net": "local",
+				"*.steamcommunity.com": "local",
+				"steamcommunity.com": "local",
+				"*.github.com": "local",
+				"*github*.com": "local",
+				"*.github.io": "local"
+			},
+			"speedTest": {
+				"hostnameList": [
+					"zh.wikipedia.org",
+					"steamgames.com",
+					"api.dandanplay.net",
+					"epicgames-download1-1251447533.file.myqcloud.com",
+					"store.steampowered.com",
+					"community.akamai.steamstatic.com",
+					"cdn.akamai.steamstatic.com",
+					"steamcdn-a.akamaihd.net",
+					"store.akamai.steamstatic.com",
+					"steamcommunity.com",
+					"api.steampowered.com",
+					"pwaweblogin.wmpvp.com",
+					"github.com"
+				],
+				"dnsProviders": [
+					"local"
+				]
+			},
+			"providers": {
+				"local": {
+					"type": "udp",
+					"server": "127.0.0.1",
+					"cacheSize": 10000
+				}
+			}
+		},
+		"whiteList": {
+			"*.bilibili.*": true
+		},
+		"preSetIpList": {
+			"upload.wikimedia.org": {
+				"208.80.153.240": true,
+				"185.15.58.240": true
+			},
+			"*.wiki*.org": {
+				"208.80.153.224": true,
+				"185.15.58.224": true
+			},
+			"steam*.com": {
+				"184.85.112.102": true,
+				"23.36.106.129": true,
+				"184.87.103.42": false,
+				"23.216.236.253": true,
+				"23.199.145.101": true
+			},
+			"github.com": null,
+			"api.github.com": null,
+			"codeload.github.com": null,
+			"*.githubusercontent.com": null,
+			"github.io": null
+		},
+		"host": "0.0.0.0",
+		"setting": {
+			"defaultTimeout": 5000
+		}
+	},
+	"app": {
+		"autoStart": {
+			"enabled": true
+		},
+		"closeStrategy": 2,
+		"theme": "light",
+		"showShutdownTip": false,
+		"mode": "ow",
+		"showHideShortcut": "无",
+		"skipPreRelease": false
+	},
+	"plugin": {
+		"git": {
+			"enabled": true
+		},
+		"node": {
+			"enabled": true,
+			"setting": {
+				"registry": "https://registry.npmmirror.com",
+				"strict-ssl": false
+			}
+		},
+		"overwall": {
+			"targets": {
+				"*.wiki*.org": false,
+				"rewards.bing.com": false,
+				"*.modrinth.com": true,
+				"convars.com": true,
+				"*.convars.com": true,
+				"gitlab.igem.org": false,
+				"secure.gravatar.com": true,
+				"*.cancer.gov": true,
+				"test-ipv6.com": true,
+				"t.me": true,
+				"*.telegra.ph": true,
+				"telegra.ph": true,
+				"*.bing.com": false,
+				"*.github.com": null,
+				"*github*.com": null
+			},
+			"enabled": true
+		},
+		"pip": {
+			"setting": {
+				"trustedHost": "mirrors.aliyun.com",
+				"registry": "https://mirrors.aliyun.com/pypi/simple/"
+			}
+		}
+	},
+	"proxy": {
+		"excludeIpList": {
+			"*steaminventoryhelper.com": true,
+			"*.05.cafe": true,
+			"*.chaoxing.com": true,
+			"testzs.cn": true,
+			"emby.aladingnet.com": true,
+			"*.zhihu.com": true,
+			"*.hdslb.*": true,
+			"*8odream*": true,
+			"*ali*": true
+		}
+	}
+}
