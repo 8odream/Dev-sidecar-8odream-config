@@ -11,11 +11,6 @@
 					"sni": "mediawiki.org"
 				}
 			},
-			"greasyfork.org": {
-				".*": {
-					"sni": "baidu.com"
-				}
-			},
 			"*.akamaihd.net": {
 				".*": {
 					"sni": "baidu.com"
@@ -90,8 +85,7 @@
 			"steam*.com": {
 				"184.85.112.102": true,
 				"23.36.106.129": true,
-				"184.87.103.42": false,
-				"23.216.236.253": true,
+				"184.87.103.42": true,
 				"23.199.145.101": true
 			},
 			"github.com": null,
