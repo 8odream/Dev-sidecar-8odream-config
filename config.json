@@ -1,6 +1,11 @@
 {
 	"server": {
 		"intercepts": {
+			"greasyfork.org": {
+			    	".*": {
+			      		"redirect": "gfork.dahi.icu"
+			    	}
+			},
 			"wiki*.org": {
 				".*": {
 					"sni": "mediawiki.org"
