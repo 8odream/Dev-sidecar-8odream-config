@@ -79,6 +79,9 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"cdn.steamcommunity.com": {
+			    	"23.221.227.5": true
+			},
 			"upload.wikimedia.org": {
 				"208.80.153.240": true,
 				"185.15.58.240": true
@@ -115,7 +118,7 @@
 			    "104.71.182.190": true,
 			    "23.199.145.101": true,
 			    "184.85.112.102": true,
-			    "23.36.106.129": true
+			    "23.36.106.129": false
 			  },
 			"github.com": null,
 			"api.github.com": null,
