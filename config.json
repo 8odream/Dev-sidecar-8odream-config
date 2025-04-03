@@ -411,7 +411,7 @@
 			  "*proton.me": {
 			    "185.70.42.45": true
 			  },
-			  "#tamtam-lp*.ok.ru": {
+			  "*tamtam-lp*.ok.ru": {
 			    "217.20.158.136": true
 			  },
 			  "ok.ru": {
@@ -432,16 +432,16 @@
 			  "cdn5.cdn-telegram.org": {
 			    "34.111.108.175": true
 			  },
-			  "#zws1*.web.telegram.org": {
+			  "*zws1*.web.telegram.org": {
 			    "149.154.174.200": true
 			  },
-			  "#zws3*.web.telegram.org": {
+			  "*zws3*.web.telegram.org": {
 			    "149.154.174.200": true
 			  },
-			  "#zws2*.web.telegram.org": {
+			  "*zws2*.web.telegram.org": {
 			    "38.94.111.240": true
 			  },
-			  "#zws4*.web.telegram.org": {
+			  "*zws4*.web.telegram.org": {
 			    "38.94.111.240": true
 			  },
 			  "*.web.telegram.org": {
