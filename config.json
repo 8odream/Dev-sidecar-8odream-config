@@ -1,6 +1,101 @@
 {
 	"server": {
 		"intercepts": {
+			"api.fanbox.cc": {
+			    ".*": {
+			      "sni": "api.fanbox.cc"
+			    }
+			  },
+			  "*pixiv.net": {
+			    ".*": {
+			      "sni": "pixivision.net"
+			    }
+			  },
+			  "*fanbox.cc": {
+			    ".*": {
+			      "sni": "pixivision.net"
+			    }
+			  },
+			  "*nyaa.si": {
+			    ".*": {
+			      "sni": "ddos-guard.net"
+			    }
+			  },
+			  "*xhamster.com": {
+			    ".*": {
+			      "sni": "zh.xhamster.com"
+			    }
+			  },
+			  "*xhamster42.desi": {
+			    ".*": {
+			      "sni": "zh.xhamster42.desi"
+			    }
+			  },
+			  "*google*": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*google.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*gstatic.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*youtube.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*youtu.be": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*.ggpht.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "i.ytimg.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*youtube-nocookie.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*blogger.com": {
+			    ".*": {
+			      "sni": "g.cn"
+			    }
+			  },
+			  "*vercel.app": {
+			    ".*": {
+			      "sni": "vercel.com"
+			    }
+			  },
+			  "*lumalabs.ai": {
+			    ".*": {
+			      "sni": "vercel.com"
+			    }
+			  },
+			  "*quora.com": {
+			    ".*": {
+			      "sni": "fs.quoracdn.net"
+			    }
+			  },
+			  "*amazon.co.jp": {
+			    ".*": {
+			      "sni": "amazon.com"
+			    }
+			  },
 			"greasyfork.org": {
 			    	".*": {
 			      		"redirect": "gfork.dahi.icu"
@@ -79,6 +174,456 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"cdn.jsdelivr.net": {
+			    "104.16.89.20": true
+			  },
+			  "images.prismic.io": {
+			    "151.101.78.208": true
+			  },
+			  "api.fanbox.cc": {
+			    "172.64.146.116": true
+			  },
+			  "*pixiv.net": {
+			    "210.140.139.155": true
+			  },
+			  "*fanbox.cc": {
+			    "210.140.139.155": true
+			  },
+			  "*pximg.net": {
+			    "210.140.139.133": true
+			  },
+			  "*pinterest.com": {
+			    "151.101.0.84": true
+			  },
+			  "*pinimg.com": {
+			    "151.101.0.84": true
+			  },
+			  "*wallhaven.cc": {
+			    "15.235.80.145": true
+			  },
+			  "upld.e-hentai.org": {
+			    "89.149.221.236": true
+			  },
+			  "*e-hentai.org": {
+			    "104.20.19.168": true
+			  },
+			  "*ehgt.org": {
+			    "109.236.85.28": true
+			  },
+			  "*exhentai.org": {
+			    "178.175.132.22": true
+			  },
+			  "*hentaiverse.org": {
+			    "178.162.151.56": true
+			  },
+			  "*ehwiki.org": {
+			    "178.162.151.58": true
+			  },
+			  "*ehtracker.org": {
+			    "5.79.104.115": true
+			  },
+			  "*sukebei.nyaa.si": {
+			    "198.251.89.38": true
+			  },
+			  "*nyaa.si": {
+			    "186.2.163.20": true
+			  },
+			  "*pornhub.com": {
+			    "66.254.114.40": true
+			  },
+			  "*xvideos.com": {
+			    "185.88.181.3": true
+			  },
+			  "*xnxx.com": {
+			    "185.88.181.3": true
+			  },
+			  "*xhamster.com": {
+			    "104.17.35.109": true
+			  },
+			  "*xhamster42.desi": {
+			    "104.17.35.109": true
+			  },
+			  "*rutube.ru": {
+			    "109.238.90.239": true
+			  },
+			  "*.googlevideo.com": {
+			    "": true
+			  },
+			  "*google*": {
+			    "109.185.236.240": true
+			  },
+			  "$*google.com": {
+			    "109.185.236.240": true
+			  },
+			  "*gstatic.com": {
+			    "109.185.236.240": true
+			  },
+			  "*youtube.com": {
+			    "109.185.236.240": true
+			  },
+			  "*youtu.be": {
+			    "109.185.236.240": true
+			  },
+			  "*.ggpht.com": {
+			    "109.185.236.240": true
+			  },
+			  "i.ytimg.com": {
+			    "109.185.236.240": true
+			  },
+			  "*youtube-nocookie.com": {
+			    "109.185.236.240": true
+			  },
+			  "*blogger.com": {
+			    "109.185.236.240": true
+			  },
+			  "external-content.duckduckgo.com": {
+			    "20.43.160.189": true
+			  },
+			  "*duckduckgo.com": {
+			    "20.43.161.105": true
+			  },
+			  "*startpage.com": {
+			    "67.63.58.139": true
+			  },
+			  "*twitter.com": {
+			    "69.195.183.139": true
+			  },
+			  "x.com": {
+			    "69.195.183.139": true
+			  },
+			  "*.x.com": {
+			    "69.195.183.139": true
+			  },
+			  "t.co": {
+			    "69.195.183.139": true
+			  },
+			  "*.t.co": {
+			    "69.195.183.139": true
+			  },
+			  "*twimg.com": {
+			    "146.75.72.157": true
+			  },
+			  "*facebook.com": {
+			    "157.240.22.169": true
+			  },
+			  "*fbcdn.net": {
+			    "157.240.22.169": true
+			  },
+			  "business.whatsapp.com": {
+			    "157.240.22.169": true
+			  },
+			  "*whatsapp.com": {
+			    "157.240.225.60": true
+			  },
+			  "*whatsapp.net": {
+			    "157.240.225.60": true
+			  },
+			  "*instagram.com": {
+			    "157.240.236.174": true
+			  },
+			  "*instagr.am": {
+			    "157.240.236.174": true
+			  },
+			  "ig.me": {
+			    "157.240.236.174": true
+			  },
+			  "*.ig.me": {
+			    "157.240.236.174": true
+			  },
+			  "*github.com": {
+			    "20.200.245.247": true
+			  },
+			  "objects-origin.githubusercontent.com": {
+			    "140.82.113.22": true
+			  },
+			  "*githubusercontent.com": {
+			    "185.199.108.133": true
+			  },
+			  "$*huggingface.co": {
+			    "3.167.200.113": true
+			  },
+			  "$discuss.huggingface.co": {
+			    "3.167.200.113": true
+			  },
+			  "$status.huggingface.co": {
+			    "3.167.200.113": true
+			  },
+			  "$cdn-avatars.huggingface.co": {
+			    "3.167.200.113": true
+			  },
+			  "$cdn-uploads.huggingface.co": {
+			    "3.167.200.113": true
+			  },
+			  "$hub.docker.com": {
+			    "54.208.73.48": true
+			  },
+			  "*vercel.app": {
+			    "64.29.17.193": true
+			  },
+			  "internal-api.virginia.labs.lumalabs.ai": {
+			    "34.204.141.236": true
+			  },
+			  "*lumalabs.ai": {
+			    "76.76.21.21": true
+			  },
+			  "*archiveofourown.org": {
+			    "104.20.8.2": true
+			  },
+			  "*1lib.sk": {
+			    "176.123.7.228": true
+			  },
+			  "*z-lib.fm": {
+			    "176.123.7.228": true
+			  },
+			  "*archive.org": {
+			    "207.241.228.68": true
+			  },
+			  "*greasyfork.org": {
+			    "96.126.98.220": true
+			  },
+			  "*steamcommunity.com": {
+			    "104.73.78.128": true
+			  },
+			  "hello.vrchat.com": {
+			    "198.185.159.145": true
+			  },
+			  "ask.vrchat.com": {
+			    "216.66.8.43": true
+			  },
+			  "account.proton.me": {
+			    "185.70.42.36": true
+			  },
+			  "account-api.proton.me": {
+			    "185.70.42.20": true
+			  },
+			  "mail.proton.me": {
+			    "185.70.42.37": true
+			  },
+			  "calendar.proton.me": {
+			    "185.70.42.39": true
+			  },
+			  "drive.proton.me": {
+			    "185.70.42.40": true
+			  },
+			  "pass.proton.me": {
+			    "185.70.42.63": true
+			  },
+			  "*proton.me": {
+			    "185.70.42.45": true
+			  },
+			  "#tamtam-lp*.ok.ru": {
+			    "217.20.158.136": true
+			  },
+			  "ok.ru": {
+			    "5.61.23.11": true
+			  },
+			  "www.ok.ru": {
+			    "5.61.23.11": true
+			  },
+			  "*ok.ru": {
+			    "5.61.23.30": true
+			  },
+			  "cdn1.cdn-telegram.org": {
+			    "34.111.15.3": true
+			  },
+			  "cdn4.cdn-telegram.org": {
+			    "34.111.35.152": true
+			  },
+			  "cdn5.cdn-telegram.org": {
+			    "34.111.108.175": true
+			  },
+			  "#zws1*.web.telegram.org": {
+			    "149.154.174.200": true
+			  },
+			  "#zws3*.web.telegram.org": {
+			    "149.154.174.200": true
+			  },
+			  "#zws2*.web.telegram.org": {
+			    "38.94.111.240": true
+			  },
+			  "#zws4*.web.telegram.org": {
+			    "38.94.111.240": true
+			  },
+			  "*.web.telegram.org": {
+			    "149.154.170.200": true
+			  },
+			  "*telegram.org": {
+			    "38.94.111.240": true
+			  },
+			  "*tg.dev": {
+			    "38.94.111.240": true
+			  },
+			  "t.me": {
+			    "38.94.111.240": true
+			  },
+			  "*.t.me": {
+			    "38.94.111.240": true
+			  },
+			  "*telesco.pe": {
+			    "38.94.111.240": true
+			  },
+			  "*discord.com": {
+			    "162.159.136.232": true
+			  },
+			  "*discord.gg": {
+			    "162.159.130.234": true
+			  },
+			  "*discordapp.com": {
+			    "162.159.130.233": true
+			  },
+			  "$assets.twitch.tv": {
+			    "3.167.200.113": true
+			  },
+			  "$panels.twitch.tv": {
+			    "3.167.200.113": true
+			  },
+			  "$passport.twitch.tv": {
+			    "3.167.200.113": true
+			  },
+			  "$irc-ws.chat.twitch.tv": {
+			    "3.167.200.113": true
+			  },
+			  "$*twitch.tv": {
+			    "151.101.194.167": true
+			  },
+			  "$m.twitch.tv": {
+			    "151.101.194.167": true
+			  },
+			  "$gql.twitch.tv": {
+			    "151.101.194.167": true
+			  },
+			  "$*nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$account.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$live.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$live2.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$sp.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$nvapi.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$embed.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "$wktk.nicovideo.jp": {
+			    "3.167.200.113": true
+			  },
+			  "*rumble.com": {
+			    "205.220.231.24": true
+			  },
+			  "*reddit.com": {
+			    "146.75.33.140": true
+			  },
+			  "*redditstatic.com": {
+			    "146.75.33.140": true
+			  },
+			  "*redd.it": {
+			    "146.75.33.140": true
+			  },
+			  "*redditmedia.com": {
+			    "146.75.33.140": true
+			  },
+			  "*quora.com": {
+			    "3.228.159.208": true
+			  },
+			  "*v2ex.com": {
+			    "172.67.35.211": true
+			  },
+			  "*onedrive.live.com": {
+			    "13.107.42.13": true
+			  },
+			  "*mega.io": {
+			    "66.203.127.11": true
+			  },
+			  "*mega.nz": {
+			    "31.216.144.5": true
+			  },
+			  "*api.mega.co.nz": {
+			    "66.203.125.15": true
+			  },
+			  "*dropbox.com": {
+			    "162.125.248.18": true
+			  },
+			  "*amazon.co.jp": {
+			    "18.66.145.15": true
+			  },
+			  "*etsy.com": {
+			    "151.101.193.224": true
+			  },
+			  "*bbc.com": {
+			    "146.75.36.81": true
+			  },
+			  "*bbci.co.uk": {
+			    "23.77.21.232": true
+			  },
+			  "*bbc.co.uk": {
+			    "23.77.21.232": true
+			  },
+			  "*nytimes.com": {
+			    "146.75.117.164": true
+			  },
+			  "*nyt.com": {
+			    "146.75.117.164": true
+			  },
+			  "*rfi.fr": {
+			    "118.214.247.61": true
+			  },
+			  "graphql.api.dailymotion.com": {
+			    "34.84.14.157": true
+			  },
+			  "*dailymotion.com": {
+			    "195.8.215.140": true
+			  },
+			  "forum.f-droid.org": {
+			    "37.218.242.53": true
+			  },
+			  "f-droid.org": {
+			    "37.218.243.72": true
+			  },
+			  "www.f-droid.org": {
+			    "37.218.243.72": true
+			  },
+			  "fdroid.org": {
+			    "37.218.243.72": true
+			  },
+			  "*apkmirror.com": {
+			    "104.17.67.215": true
+			  },
+			  "*gravatar.com": {
+			    "192.0.80.240": true
+			  },
+			  "*okx.com": {
+			    "8.212.101.92": true
+			  },
+			  "*patreon.com": {
+			    "104.16.25.14": true
+			  },
+			  "*patreonusercontent.com": {
+			    "104.18.70.106": true
+			  },
+			  "*vimeo.com": {
+			    "162.159.138.60": true
+			  },
+			  "identity.flickr.com": {
+			    "3.209.240.130": true
+			  },
+			  "*flickr.com": {
+			    "13.33.142.102": true
+			  },
+			  "*imgur.com": {
+			    "199.232.196.193": true
+			  },
+			  "*thetvdb.com": {
+			    "54.192.23.105": true
+			  },
 			"cdn.steamcommunity.com": {
 			    	"23.221.227.5": true
 			},
@@ -101,6 +646,7 @@
 			    "104.71.182.190": true
 			  },
 			  "store.steampowered.com": {
+			    "23.46.197.62": true,
 			    "23.205.36.100": true,
 			    "23.202.181.219": true,
 			    "23.206.181.48": true,
