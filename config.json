@@ -674,7 +674,7 @@
 		},
 		"host": "0.0.0.0",
 		"setting": {
-			"defaultTimeout": 5000
+			"defaultTimeout": 20000
 		}
 	},
 	"app": {
