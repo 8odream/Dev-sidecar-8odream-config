@@ -1,7 +1,17 @@
 {
 	"server": {
 		"intercepts": {
-			"api.fanbox.cc": {
+			"greasyfork.org": {
+			    ".*": {
+			      "redirect": "gfork.dahi.icu"
+			    }
+			  },
+			  "images.prismic.io": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "api.fanbox.cc": {
 			    ".*": {
 			      "sni": "api.fanbox.cc"
 			    }
@@ -16,9 +26,84 @@
 			      "sni": "pixivision.net"
 			    }
 			  },
+			  "*pximg.net": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*pinterest.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*pinimg.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wallhaven.cc": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "upld.e-hentai.org": {
+			    ".*": {
+			      "sni": ""
+			    }
+			  },
+			  "*e-hentai.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*ehgt.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*exhentai.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*hentaiverse.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*ehwiki.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*ehtracker.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*sukebei.nyaa.si": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
 			  "*nyaa.si": {
 			    ".*": {
 			      "sni": "ddos-guard.net"
+			    }
+			  },
+			  "*pornhub.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*xvideos.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*xnxx.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
 			    }
 			  },
 			  "*xhamster.com": {
@@ -31,49 +116,164 @@
 			      "sni": "zh.xhamster42.desi"
 			    }
 			  },
+			  "*rutube.ru": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*.googlevideo.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
 			  "*google*": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*google.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*gstatic.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*youtube.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*youtu.be": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*.ggpht.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "i.ytimg.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*youtube-nocookie.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
 			    }
 			  },
 			  "*blogger.com": {
 			    ".*": {
-			      "sni": "g.cn"
+			      "sni": "www.google.cn"
+			    }
+			  },
+			  "external-content.duckduckgo.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*duckduckgo.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*startpage.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*twitter.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "x.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*.x.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "t.co": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*.t.co": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*twimg.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*facebook.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*fbcdn.net": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "business.whatsapp.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*whatsapp.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*whatsapp.net": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*instagram.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*instagr.am": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "ig.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*.ig.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*github.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "objects-origin.githubusercontent.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*githubusercontent.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
 			    }
 			  },
 			  "*vercel.app": {
@@ -81,9 +281,284 @@
 			      "sni": "vercel.com"
 			    }
 			  },
+			  "internal-api.virginia.labs.lumalabs.ai": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
 			  "*lumalabs.ai": {
 			    ".*": {
 			      "sni": "vercel.com"
+			    }
+			  },
+			  "upload.wikimedia.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikipedia.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikimedia.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikinews.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wiktionary.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikibooks.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikiversity.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikidata.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikiquote.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikivoyage.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*wikifunctions.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*archiveofourown.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*1lib.sk": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*z-lib.fm": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*archive.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*greasyfork.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*steamcommunity.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "store.steampowered.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "hello.vrchat.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "ask.vrchat.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "account.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "account-api.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "mail.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "calendar.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "drive.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "pass.proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*proton.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "tamtam-lp*.ok.ru": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "ok.ru": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "www.ok.ru": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*ok.ru": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "cdn1.cdn-telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "cdn4.cdn-telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "cdn5.cdn-telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "zws1*.web.telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "zws3*.web.telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "zws2*.web.telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "zws4*.web.telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*telegram.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*tg.dev": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "t.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*.t.me": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*telesco.pe": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*discord.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*discord.gg": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*discordapp.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "$*twitch.tv": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "$m.twitch.tv": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "$gql.twitch.tv": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*rumble.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*reddit.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*redditstatic.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*redd.it": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*redditmedia.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
 			    }
 			  },
 			  "*quora.com": {
@@ -91,46 +566,161 @@
 			      "sni": "fs.quoracdn.net"
 			    }
 			  },
+			  "*v2ex.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*onedrive.live.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*mega.io": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*mega.nz": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*api.mega.co.nz": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*dropbox.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
 			  "*amazon.co.jp": {
 			    ".*": {
 			      "sni": "amazon.com"
 			    }
 			  },
-			"greasyfork.org": {
-			    	".*": {
-			      		"redirect": "gfork.dahi.icu"
-			    	}
-			},
-			"wiki*.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*.wiki*.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*.akamaihd.net": {
-				".*": {
-					"sni": "baidu.com"
-				}
-			},
-			"akamaihd.net": {
-				".*": {
-					"sni": "baidu.com"
-				}
-			},
-			"*.steam*.com": {
-				".*": {
-					"sni": "baidu.com"
-				}
-			},
-			"steam*.com": {
-				".*": {
-					"sni": "baidu.com"
-				}
-			}
+			  "*etsy.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*bbc.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*bbci.co.uk": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*bbc.co.uk": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*nytimes.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*nyt.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*rfi.fr": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "graphql.api.dailymotion.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*dailymotion.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "forum.f-droid.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "f-droid.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "www.f-droid.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "fdroid.org": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*apkmirror.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*gravatar.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*okx.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*patreon.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*patreonusercontent.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*vimeo.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "identity.flickr.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*flickr.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*imgur.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "*thetvdb.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			  "cn-greasyfork.org": {
+			    ".*": {
+			      "redirect": "greasyfork.org"
+			    }
+			  }
 		},
 		"dns": {
 			"mapping": {
@@ -532,7 +1122,8 @@
 			    "146.75.33.140": true
 			  },
 			  "*quora.com": {
-			    "3.228.159.208": true
+			    "162.159.153.247": true,
+    			    "162.159.152.17": true
 			  },
 			  "*v2ex.com": {
 			    "172.67.35.211": true
