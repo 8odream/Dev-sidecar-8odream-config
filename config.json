@@ -521,17 +521,17 @@
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "$*twitch.tv": {
+			  "*twitch.tv": {
 			    ".*": {
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "$m.twitch.tv": {
+			  "m.twitch.tv": {
 			    ".*": {
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "$gql.twitch.tv": {
+			  "gql.twitch.tv": {
 			    ".*": {
 			      "sni": "www.baidu.com"
 			    }
@@ -842,7 +842,7 @@
 			  "*google*": {
 			    "109.185.236.240": true
 			  },
-			  "$*google.com": {
+			  "*google.com": {
 			    "109.185.236.240": true
 			  },
 			  "*gstatic.com": {
