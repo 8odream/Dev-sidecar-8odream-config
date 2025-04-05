@@ -186,31 +186,6 @@
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "*twitter.com": {
-			    ".*": {
-			      "sni": "www.baidu.com"
-			    }
-			  },
-			  "x.com": {
-			    ".*": {
-			      "sni": "www.baidu.com"
-			    }
-			  },
-			  "*.x.com": {
-			    ".*": {
-			      "sni": "www.baidu.com"
-			    }
-			  },
-			  "t.co": {
-			    ".*": {
-			      "sni": "www.baidu.com"
-			    }
-			  },
-			  "*.t.co": {
-			    ".*": {
-			      "sni": "www.baidu.com"
-			    }
-			  },
 			  "*twimg.com": {
 			    ".*": {
 			      "sni": "www.baidu.com"
@@ -748,9 +723,6 @@
 					"pwaweblogin.wmpvp.com",
 					"github.com"
 				],
-				"dnsProviders": [
-					"local"
-				]
 			},
 			"providers": {
 				"local": {
@@ -876,19 +848,24 @@
 			    "67.63.58.139": true
 			  },
 			  "*twitter.com": {
-			    "69.195.183.139": true
+			    "162.159.140.229": true,
+    			    "172.66.0.227": true
 			  },
 			  "x.com": {
-			    "69.195.183.139": true
+			    "162.159.140.229": true,
+    			    "172.66.0.227": true
 			  },
 			  "*.x.com": {
-			    "69.195.183.139": true
+			    "162.159.140.229": true,
+    			    "172.66.0.227": true
 			  },
 			  "t.co": {
-			    "69.195.183.139": true
+			    "162.159.140.229": true,
+   			    "172.66.0.227": true
 			  },
 			  "*.t.co": {
-			    "69.195.183.139": true
+			    "162.159.140.229": true,
+    			    "172.66.0.227": true
 			  },
 			  "*twimg.com": {
 			    "146.75.72.157": true
@@ -1319,10 +1296,8 @@
 	"proxy": {
 		"excludeIpList": {
 			"*steaminventoryhelper.com": true,
-			"*.05.cafe": true,
 			"*.chaoxing.com": true,
 			"testzs.cn": true,
-			"emby.aladingnet.com": true,
 			"*.zhihu.com": true,
 			"*.hdslb.*": true,
 			"*8odream*": true,
