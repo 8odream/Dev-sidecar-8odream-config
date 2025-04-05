@@ -1011,6 +1011,9 @@
 			  "*zws4*.web.telegram.org": {
 			    "38.94.111.240": true
 			  },
+			  "web.telegram.org": {
+			    "38.94.111.240": true
+			  },
 			  "*.web.telegram.org": {
 			    "149.154.170.200": true
 			  },
