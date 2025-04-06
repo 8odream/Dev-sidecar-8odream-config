@@ -5,11 +5,7 @@
 
 1.支持直连大部分Sheas ◁ Cealer中配置的文件。
 
-不支持的列表（由于当前版本DS无法空置SNI域名）：
-
-huggingface
-
-hub.docker.com
+不支持的列表（由于当前版本DS无法空置SNI域名或其它原因）：
 
 twitch.tv
 
