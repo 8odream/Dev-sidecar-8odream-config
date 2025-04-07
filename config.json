@@ -273,27 +273,27 @@
 			  },
 			  "upload.wikimedia.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikipedia.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikimedia.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikinews.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wiktionary.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikibooks.org": {
@@ -303,32 +303,32 @@
 			  },
 			  "*wikiversity.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikidata.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikiquote.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikivoyage.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*wikifunctions.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "mediawiki.org"
 			    }
 			  },
 			  "*archiveofourown.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*1lib.sk": {
