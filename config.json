@@ -53,12 +53,12 @@
 			  },
 			  "upld.e-hentai.org": {
 			    ".*": {
-			      "sni": ""
+			      "sni": "none"
 			    }
 			  },
 			  "*e-hentai.org": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*ehgt.org": {
