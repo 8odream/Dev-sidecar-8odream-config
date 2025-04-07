@@ -483,32 +483,32 @@
 			  },
 			  "*discord.com": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*discord.gg": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*discordapp.com": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "www.none"
 			    }
 			  },
 			  "*twitch.tv": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "m.twitch.tv": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "gql.twitch.tv": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*rumble.com": {
