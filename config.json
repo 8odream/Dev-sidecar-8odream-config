@@ -498,7 +498,7 @@
 			  },
 			  "*discordapp.com": {
 			    ".*": {
-			      "sni": "www.none"
+			      "sni": "none"
 			    }
 			  },
 			  "*twitch.tv": {
