@@ -543,7 +543,7 @@
 			  },
 			  "*v2ex.com": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "sni": "none"
 			    }
 			  },
 			  "*onedrive.live.com": {
