@@ -1,6 +1,11 @@
 {
 	"server": {
 		"intercepts": {
+			"huggingface.co": {
+			    ".*": {
+			      "sni": "huggingface.cn"
+			    }
+			  },
 			"greasyfork.org": {
 			    ".*": {
 			      "redirect": "gfork.dahi.icu"
@@ -906,22 +911,22 @@
 			  "*githubusercontent.com": {
 			    "185.199.108.133": true
 			  },
-			  "$*huggingface.co": {
+			  "*huggingface.co": {
 			    "3.167.200.113": true
 			  },
-			  "$discuss.huggingface.co": {
+			  "discuss.huggingface.co": {
 			    "3.167.200.113": true
 			  },
-			  "$status.huggingface.co": {
+			  "status.huggingface.co": {
 			    "3.167.200.113": true
 			  },
-			  "$cdn-avatars.huggingface.co": {
+			  "cdn-avatars.huggingface.co": {
 			    "3.167.200.113": true
 			  },
-			  "$cdn-uploads.huggingface.co": {
+			  "cdn-uploads.huggingface.co": {
 			    "3.167.200.113": true
 			  },
-			  "$hub.docker.com": {
+			  "hub.docker.com": {
 			    "54.208.73.48": true
 			  },
 			  "*vercel.app": {
@@ -1041,49 +1046,49 @@
 			  "*discordapp.com": {
 			    "162.159.130.233": true
 			  },
-			  "$assets.twitch.tv": {
+			  "assets.twitch.tv": {
 			    "3.167.200.113": true
 			  },
-			  "$panels.twitch.tv": {
+			  "panels.twitch.tv": {
 			    "3.167.200.113": true
 			  },
-			  "$passport.twitch.tv": {
+			  "passport.twitch.tv": {
 			    "3.167.200.113": true
 			  },
-			  "$irc-ws.chat.twitch.tv": {
+			  "irc-ws.chat.twitch.tv": {
 			    "3.167.200.113": true
 			  },
-			  "$*twitch.tv": {
+			  "*twitch.tv": {
 			    "151.101.194.167": true
 			  },
-			  "$m.twitch.tv": {
+			  "m.twitch.tv": {
 			    "151.101.194.167": true
 			  },
-			  "$gql.twitch.tv": {
+			  "gql.twitch.tv": {
 			    "151.101.194.167": true
 			  },
-			  "$*nicovideo.jp": {
+			  "*nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$account.nicovideo.jp": {
+			  "account.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$live.nicovideo.jp": {
+			  "live.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$live2.nicovideo.jp": {
+			  "live2.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$sp.nicovideo.jp": {
+			  "sp.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$nvapi.nicovideo.jp": {
+			  "nvapi.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$embed.nicovideo.jp": {
+			  "embed.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
-			  "$wktk.nicovideo.jp": {
+			  "wktk.nicovideo.jp": {
 			    "3.167.200.113": true
 			  },
 			  "*rumble.com": {
