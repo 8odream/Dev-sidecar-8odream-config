@@ -1,6 +1,16 @@
 {
 	"server": {
 		"intercepts": {
+			"*233v2.com": {
+			    ".*": {
+			      "sni": "www.baidu.com"
+			    }
+			  },
+			"*.yahoo.com": {
+			    ".*": {
+			      "sni": "none"
+			    }
+			  },
 			"huggingface.co": {
 			    ".*": {
 			      "sni": "huggingface.cn"
@@ -741,7 +751,24 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
-			"cdn.jsdelivr.net": {
+			  "*233v2.com": {
+			    "52.74.232.59": true,
+			    "13.52.115.166": true
+			  },
+			 "guce.yahoo.com": {
+			    "3.208.227.166": true,
+			    "54.255.142.244": true,
+			    "13.228.67.2": true,
+			    "3.1.71.0": true
+			  },
+			  "*.yahoo.com": {
+			    "69.147.87.251": true,
+			    "106.10.236.37": true,
+			    "180.222.114.11": true,
+			    "180.222.116.11": true,
+			    "180.222.119.247": true
+			  },
+			  "cdn.jsdelivr.net": {
 			    "104.16.89.20": true
 			  },
 			  "images.prismic.io": {
@@ -1252,40 +1279,13 @@
 			"defaultTimeout": 20000
 		}
 	},
-	"app": {
-		"autoStart": {
-			"enabled": true
-		},
-		"closeStrategy": 2,
-		"theme": "light",
-		"showShutdownTip": false,
-		"mode": "ow",
-		"showHideShortcut": "无",
-		"skipPreRelease": false
-	},
 	"plugin": {
-		"git": {
-			"enabled": true
-		},
-		"node": {
-			"enabled": true,
-			"setting": {
-				"registry": "https://registry.npmmirror.com",
-				"strict-ssl": false
-			}
-		},
 		"overwall": {
 			"targets": {
-				"*.wiki*.org": false,
 				"rewards.bing.com": false,
-				"*.modrinth.com": true,
-				"convars.com": true,
-				"*.convars.com": true,
-				"gitlab.igem.org": false,
 				"secure.gravatar.com": true,
 				"*.cancer.gov": true,
 				"test-ipv6.com": true,
-				"t.me": true,
 				"*.telegra.ph": true,
 				"telegra.ph": true,
 				"*.bing.com": false,
@@ -1294,21 +1294,15 @@
 			},
 			"enabled": true
 		},
-		"pip": {
-			"setting": {
-				"trustedHost": "mirrors.aliyun.com",
-				"registry": "https://mirrors.aliyun.com/pypi/simple/"
-			}
-		}
 	},
 	"proxy": {
 		"excludeIpList": {
+			"*.live.com": false
 			"*steaminventoryhelper.com": true,
 			"*.chaoxing.com": true,
 			"testzs.cn": true,
 			"*.zhihu.com": true,
 			"*.hdslb.*": true,
-			"*8odream*": true,
 			"*ali*": true
 		}
 	}
