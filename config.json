@@ -16,11 +16,6 @@
 			      "sni": "huggingface.cn"
 			    }
 			  },
-			"greasyfork.org": {
-			    ".*": {
-			      "redirect": "gfork.dahi.icu"
-			    }
-			  },
 			  "images.prismic.io": {
 			    ".*": {
 			      "sni": "www.baidu.com"
@@ -706,11 +701,6 @@
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "cn-greasyfork.org": {
-			    ".*": {
-			      "redirect": "greasyfork.org"
-			    }
-			  }
 		},
 		"dns": {
 			"mapping": {
@@ -977,8 +967,9 @@
 			  "*archive.org": {
 			    "207.241.228.68": true
 			  },
-			  "*greasyfork.org": {
-			    "96.126.98.220": true
+			  "greasyfork.org": {
+			    "96.126.98.220": true,
+    			    "50.116.4.196": true
 			  },
 			  "*steamcommunity.com": {
 			    "104.68.46.176": true,
