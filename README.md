@@ -7,8 +7,15 @@
 
 不支持的列表（由于当前版本DS无法空置SNI域名或其它原因）：
 
-twitch.tv
+twitch
 
-nicovideo.jp
+nicovideo
+
+discord
+
+audiomask
+
+googlevideo
+
 
 3.允许通过本地127.0.0.1访问本地UDP的DNS，用以支持AdGuardHome去广告或配置IP、支持更加丰富的DNS加密类型
