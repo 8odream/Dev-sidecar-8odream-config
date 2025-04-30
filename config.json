@@ -536,9 +536,14 @@
 			      "sni": "www.baidu.com"
 			    }
 			  },
-			  "*redd.it": {
+			  "redd.it": {
 			    ".*": {
 			      "redirect": "www.reddit.com"
+			    }
+			  },
+			  "*redd.it": {
+			    ".*": {
+			      "sni": "www.baidu.com"
 			    }
 			  },
 			  "*redditmedia.com": {
