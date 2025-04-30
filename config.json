@@ -538,7 +538,7 @@
 			  },
 			  "*redd.it": {
 			    ".*": {
-			      "sni": "www.baidu.com"
+			      "redirect": "www.reddit.com"
 			    }
 			  },
 			  "*redditmedia.com": {
