@@ -1319,7 +1319,7 @@
 	},
 	"proxy": {
 		"excludeIpList": {
-			"*.live.com": false，
+			"*.live.com": false,
 			"*steaminventoryhelper.com": true,
 			"*.chaoxing.com": true,
 			"testzs.cn": true,
