@@ -705,7 +705,7 @@
 			    ".*": {
 			      "sni": "www.baidu.com"
 			    }
-			  },
+			  }
 		},
 		"dns": {
 			"mapping": {
@@ -732,7 +732,7 @@
 					"api.steampowered.com",
 					"pwaweblogin.wmpvp.com",
 					"github.com"
-				],
+				]
 			},
 			"providers": {
 				"local": {
@@ -1294,12 +1294,7 @@
 			    "23.35.101.126": true,
 			    "104.99.49.179": true,
 			    "23.218.33.47": true
-			  },
-			"github.com": null,
-			"api.github.com": null,
-			"codeload.github.com": null,
-			"*.githubusercontent.com": null,
-			"github.io": null
+			  }
 		},
 		"host": "0.0.0.0",
 		"setting": {
@@ -1320,11 +1315,11 @@
 				"*github*.com": null
 			},
 			"enabled": true
-		},
+		}
 	},
 	"proxy": {
 		"excludeIpList": {
-			"*.live.com": false
+			"*.live.com": false，
 			"*steaminventoryhelper.com": true,
 			"*.chaoxing.com": true,
 			"testzs.cn": true,
