@@ -131,17 +131,7 @@
 					"sni": "www.baidu.com"
 				}
 			},
-			"*.googlevideo.com": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*google*": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*google.com": {
+			"*.google.*": {
 				".*": {
 					"sni": "www.google.cn"
 				}
@@ -506,19 +496,10 @@
 					"sni": "none"
 				}
 			},
-			"*twitch.tv": {
+			"^(?!assets|gql|vod-secure|panels)\\.twitch\\.tv$": {
 				".*": {
-					"sni": "none"
-				}
-			},
-			"m.twitch.tv": {
-				".*": {
-					"sni": "none"
-				}
-			},
-			"gql.twitch.tv": {
-				".*": {
-					"sni": "none"
+					"sni": "cloudfront.net",
+					"desc": "聊天需要 wss://irc-ws.chat.twitch.tv/"
 				}
 			},
 			"*rumble.com": {
@@ -836,35 +817,27 @@
 				"109.238.90.239": true
 			},
 			"*google*": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*gstatic.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*youtube.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*youtu.be": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*.ggpht.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"i.ytimg.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*youtube-nocookie.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"*blogger.com": {
-				"109.185.236.240": true,
 				"8.137.102.117": true
 			},
 			"external-content.duckduckgo.com": {
