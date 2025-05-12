@@ -1,6 +1,12 @@
 {
 	"server": {
 		"intercepts": {
+			"telegra.ph": {
+				".*": {
+					"sni": "none",
+					"desc":"为什么资源404?"
+				}
+			},
 			"*233v2.com": {
 				".*": {
 					"sni": "www.baidu.com"
@@ -351,7 +357,7 @@
 					"sni": "www.baidu.com"
 				}
 			},
-			"store.steampowered.com": {
+			"*.steampowered.com": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -727,6 +733,11 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"telegra.ph": {
+				"95.161.64.99": true,
+				"95.161.64.100": true,
+				"149.154.161.145": true
+			},
 			"*233v2.com": {
 				"52.74.232.59": true,
 				"13.52.115.166": true
@@ -968,7 +979,7 @@
 				"176.123.7.228": true
 			},
 			"*archive.org": {
-				"207.241.228.68": true
+				"207.241.225.120": true
 			},
 			"greasyfork.org": {
 				"96.126.98.220": true,
