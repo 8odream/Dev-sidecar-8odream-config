@@ -369,7 +369,7 @@
 					"desc": "讨论区锁区,考虑不拦截丢给彩蛋"
 				}
 			},
-			"^(?!community.cloudflare).steamstatic.com$": {
+			"^(?!community.cloudflare).*steamstatic.com$": {
 				".*": {
 					"sni": "baidu.com",
 					"desc": "steam社区数据不能也不需调整sni,直接直连"
