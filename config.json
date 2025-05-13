@@ -142,9 +142,10 @@
 					"sni": "www.google.cn"
 				}
 			},
-			"*.googleapis.com": {
+			"^(?!fonts)*.googleapis.com$": {
 				".*": {
-					"sni": "www.google.cn"
+					"sni": "www.google.cn",
+					"desc": "谷歌字体库不需调整sni"
 				}
 			},
 			"*gstatic.com": {
