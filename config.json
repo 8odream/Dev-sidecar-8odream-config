@@ -363,6 +363,12 @@
 					"sni": "www.baidu.com"
 				}
 			},
+			"*.steamserver.net": {
+				".*": {
+					"sni": "www.baidu.com",
+					"desc": "steam登录不稳定？无法复现先这么写"
+				}
+			},
 			"images.steamusercontent.com": {
 				".*": {
 					"sni": "baidu.com"
