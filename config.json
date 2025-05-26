@@ -1,6 +1,63 @@
 {
 	"server": {
 		"intercepts": {
+			"*gamer.com.tw":{
+				".*": {
+					"sni": "none"
+				}
+			},
+			"_*claude.ai": {
+				".*": {
+					"sni": "claude.ai"
+				}
+			},
+			"_^(?<pre>.*).googlevideo1.com$": {
+				"*": {
+				"proxy": "${pre}.gvt1.com",
+				"sni": "g.cn",
+				"ipv6only": true
+				}
+			},
+			"*_netflix.com":{
+				".*": {
+					"sni": "netflix.com"
+				}
+			},
+			"_*disneyplus.com":{
+				".*": {
+					"sni": "disneyplus.com"
+				}
+			},
+			"_disney.*.edge.bamgrid.com":{
+				".*":{
+					"sni": "disney.images.edge.bamgrid.com"
+				}
+			},
+			"_*bilibili.tv":{
+				".*": {
+					"sni": "bilibili.tv"
+				}
+			},
+			"_open.spotify.com":{
+				".*": {
+					"sni": "open.spotify.com"
+				}
+			},
+			"_*spotify.com":{
+				".*": {
+					"sni": "spotify.com"
+				}
+			},
+			"_a5.behance.net":{
+				".*": {
+					"sni": "a5.behance.net"
+				}
+			},
+			"*behance.net":{
+				".*": {
+					"sni": "behance.net"
+				}
+			},
 			"1.1.1.1": {
 				".*": {
 					"redirect": "one.one.one.one"
@@ -58,11 +115,6 @@
 				}
 			},
 			"*pinimg.com": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*wallhaven.cc": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -140,6 +192,16 @@
 			"*rutube.ru": {
 				".*": {
 					"sni": "www.baidu.com"
+				}
+			},
+			"csp.withgoogle.com": {
+				".*": {
+					"sni": "www.google.cn"
+				}
+			},
+			"*googleusercontent.com": {
+				".*": {
+					"sni": "www.google.cn"
 				}
 			},
 			"*.google.*": {
@@ -762,6 +824,36 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"*gamer.com.tw": {
+				"104.16.223.104": true
+			},
+			"*claude.ai":{
+				"2602:fc59:b0:64::a04f:680a": true
+			},
+			"*netflix.com":{
+				"2602:fc59:b0:64::2cf2:0da1": true
+			},
+			"*disneyplus.com":{
+				"2602:fc59:b0:64::17c5:ea7c": true
+			},
+			"disney.*.edge.bamgrid.com":{
+				"2602:fc59:b0:64::36e6:4744": true
+			},
+			"*bilibili.tv":{
+				"2602:fc59:b0:64::6797:9785": true
+			},
+			"open.spotify.com":{
+				"2602:fc59:b0:64::9765:c32a": true
+			},
+			"*.spotify.com":{
+				"2600:1901:1:7c5::": true
+			},
+			"a5.behance.net":{
+				"13.35.185.106": true
+			},
+			"*behance.net":{
+				"2602:fc59:b0:64::9765:41c5": true
+			},
 			"telegra.ph": {
 				"95.161.64.99": true,
 				"95.161.64.100": true,
@@ -808,9 +900,6 @@
 			"*pinimg.com": {
 				"151.101.0.84": true
 			},
-			"*wallhaven.cc": {
-				"15.235.80.145": true
-			},
 			"upld.e-hentai.org": {
 				"89.149.221.236": true
 			},
@@ -855,6 +944,18 @@
 			},
 			"*rutube.ru": {
 				"109.238.90.239": true
+			},
+			"*googleusercontent.com": {
+				"34.49.133.3": false,
+				"176.124.206.143": {
+				"desc": "英国中转"
+				},
+				"176.124.206.140": {
+				"desc": "英国中转"
+				},
+				"144.172.103.58": {
+				"desc": "美国中转"
+				}
 			},
 			"www.google.com": {
 				"34.49.133.3": false,
@@ -985,16 +1086,20 @@
 				"157.240.225.60": true
 			},
 			"*instagram.com": {
-				"157.240.236.174": true
+				"157.240.236.174": true,
+				"157.240.27.174": true
 			},
 			"*instagr.am": {
-				"157.240.236.174": true
+				"157.240.236.174": true,
+				"157.240.27.174": true
 			},
 			"ig.me": {
-				"157.240.236.174": true
+				"157.240.236.174": true,
+				"157.240.27.174": true
 			},
 			"*.ig.me": {
-				"157.240.236.174": true
+				"157.240.236.174": true,
+				"157.240.27.174": true
 			},
 			"github.com": {
 				"20.205.243.166": true,
