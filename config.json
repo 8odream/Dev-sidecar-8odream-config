@@ -1,6 +1,11 @@
 {
 	"server": {
 		"intercepts": {
+			"_copilot.microsoft.com":{
+				".*": {
+					"sni": "www.azureedge.net"
+				}
+			},
 			"*gamer.com.tw":{
 				".*": {
 					"sni": "none"
@@ -405,12 +410,12 @@
 					"sni": "none"
 				}
 			},
-			"*1lib.sk": {
+			"*z-library.sk": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
 			},
-			"*z-lib.fm": {
+			"*z-lib.help": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -824,6 +829,9 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"copilot.microsoft.com":{
+				"2602:fc59:b0:64::cc4f:c5ed":true
+			},
 			"*gamer.com.tw": {
 				"104.16.223.104": true
 			},
@@ -904,7 +912,7 @@
 				"89.149.221.236": true
 			},
 			"*e-hentai.org": {
-				"104.20.19.168": true
+				"172.67.2.238": true
 			},
 			"*ehgt.org": {
 				"109.236.85.28": true
@@ -944,6 +952,21 @@
 			},
 			"*rutube.ru": {
 				"109.238.90.239": true
+			},
+			"_google_backup":{
+				"8.137.102.117": {
+					"desc": "阿里云中转"
+				},
+				"47.102.115.14":"true",
+				"194.87.31.227":"true",
+				"136.124.0.28":"true",
+				"136.124.0.29":"true",
+				"34.49.133.3":"true",
+				"142.251.189.206":"true",
+				"142.251.190.206":"true",
+				"172.217.204.206":"true",
+				"172.253.122.206":"true",
+				"38.180.33.93":"true"
 			},
 			"*googleusercontent.com": {
 				"8.137.102.117": {
@@ -1135,14 +1158,14 @@
 			"*archiveofourown.org": {
 				"104.20.8.2": true
 			},
-			"*1lib.sk": {
-				"176.123.7.228": true
+			"*z-library.sk": {
+				"176.123.7.105": true
 			},
-			"*z-lib.fm": {
-				"176.123.7.228": true
+			"*z-lib.help": {
+				"176.123.7.105": true
 			},
 			"*archive.org": {
-				"207.241.225.120": true
+				"207.241.237.2": true
 			},
 			"greasyfork.org": {
 				"96.126.98.220": true,
@@ -1435,7 +1458,7 @@
 				"162.159.138.60": true
 			},
 			"identity.flickr.com": {
-				"3.209.240.130": true
+				"44.217.169.39": true
 			},
 			"*flickr.com": {
 				"13.33.142.102": true
@@ -1476,6 +1499,13 @@
 				"23.35.101.126": true,
 				"104.99.49.179": true,
 				"23.218.33.47": true
+			},
+			"checkout.steampowered.com": {
+				"23.58.97.230": "true",
+				"23.195.152.91": "true",
+				"23.196.173.177": "true",
+				"23.35.101.126": "true",
+				"23.54.153.177": "true"
 			}
 		},
 		"host": "0.0.0.0",
