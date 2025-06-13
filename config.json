@@ -205,7 +205,7 @@
 				  "desc": "谷歌字体库不需调整sni"
 				}
 			  },
-			  "^.*(gstaticcom|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
+			  "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
 				".*": {
 				  "sni": "www.google.cn"
 				}
@@ -806,7 +806,7 @@
 				"172.253.122.206":"true",
 				"38.180.33.93":"true"
 			},
-			"^.*(gstaticcom|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
+			"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
 				"8.137.102.117": {
 					"desc": "阿里云中转"
 				},
