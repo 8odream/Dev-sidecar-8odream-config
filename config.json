@@ -199,62 +199,17 @@
 					"sni": "www.baidu.com"
 				}
 			},
-			"csp.withgoogle.com": {
+			"^.*(?!fonts)*.(with)?google(apis|usercontent)?.com.*$": {
 				".*": {
-					"sni": "www.google.cn"
+				  "sni": "www.google.cn",
+				  "desc": "谷歌字体库不需调整sni"
 				}
-			},
-			"*googleusercontent.com": {
+			  },
+			  "^.*(gstaticcom|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
 				".*": {
-					"sni": "www.google.cn"
+				  "sni": "www.google.cn"
 				}
-			},
-			"*.google.*": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"^(?!fonts)*.googleapis.com$": {
-				".*": {
-					"sni": "www.google.cn",
-					"desc": "谷歌字体库不需调整sni"
-				}
-			},
-			"*gstatic.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*youtube.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*youtu.be": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*.ggpht.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"i.ytimg.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*youtube-nocookie.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
-			"*blogger.com": {
-				".*": {
-					"sni": "www.google.cn"
-				}
-			},
+			  },
 			"external-content.duckduckgo.com": {
 				".*": {
 					"sni": "www.baidu.com"
@@ -266,11 +221,6 @@
 				}
 			},
 			"*startpage.com": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*twimg.com": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -350,59 +300,9 @@
 					"sni": "vercel.com"
 				}
 			},
-			"upload.wikimedia.org": {
+			"^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
 				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikipedia.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikimedia.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikinews.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wiktionary.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikibooks.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*wikiversity.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikidata.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikiquote.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikivoyage.org": {
-				".*": {
-					"sni": "mediawiki.org"
-				}
-			},
-			"*wikifunctions.org": {
-				".*": {
-					"sni": "mediawiki.org"
+				  "sni": "mediawiki.org"
 				}
 			},
 			"*archiveofourown.org": {
@@ -523,62 +423,7 @@
 					"sni": "www.baidu.com"
 				}
 			},
-			"cdn1.cdn-telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"cdn4.cdn-telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"cdn5.cdn-telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"zws1*.web.telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"zws3*.web.telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"zws2*.web.telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"zws4*.web.telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*telegram.org": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*tg.dev": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"t.me": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*.t.me": {
-				".*": {
-					"sni": "www.baidu.com"
-				}
-			},
-			"*telesco.pe": {
+			"^.*(cdn-telegram.org|web.telegram.org|telegram.org|tg.dev|t.me|telesco.pe)$": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -793,27 +638,12 @@
 		"dns": {
 			"mapping": {
 				"github.com": "local",
-				"api.dandanplay.net": "local",
-				"*.steamcommunity.com": "local",
-				"steamcommunity.com": "local",
 				"*.github.com": "local",
 				"*github*.com": "local",
 				"*.github.io": "local"
 			},
 			"speedTest": {
 				"hostnameList": [
-					"zh.wikipedia.org",
-					"steamgames.com",
-					"api.dandanplay.net",
-					"epicgames-download1-1251447533.file.myqcloud.com",
-					"store.steampowered.com",
-					"community.akamai.steamstatic.com",
-					"cdn.akamai.steamstatic.com",
-					"steamcdn-a.akamaihd.net",
-					"store.akamai.steamstatic.com",
-					"steamcommunity.com",
-					"api.steampowered.com",
-					"pwaweblogin.wmpvp.com",
 					"github.com"
 				]
 			},
@@ -953,6 +783,14 @@
 			"*rutube.ru": {
 				"109.238.90.239": true
 			},
+			"^.*(with)?google(apis|usercontent)?.com.*$":{
+				"8.137.102.117": {
+					"desc": "阿里云中转"
+				},
+				"142.251.189.206": {
+					"desc": "自动地区官方"
+				}
+			},
 			"_google_backup":{
 				"8.137.102.117": {
 					"desc": "阿里云中转"
@@ -968,53 +806,13 @@
 				"172.253.122.206":"true",
 				"38.180.33.93":"true"
 			},
-			"*googleusercontent.com": {
+			"^.*(gstaticcom|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
 				"8.137.102.117": {
 					"desc": "阿里云中转"
 				},
-				"34.49.133.3": false,
 				"142.251.189.206": {
 					"desc": "自动地区官方"
 				}
-			},
-			"*.google.*": {
-				"8.137.102.117": {
-					"desc": "阿里云中转"
-				},
-				"34.49.133.3": false,
-				"142.251.189.206": {
-					"desc": "自动地区官方"
-				}
-			},
-			"*.googleapis.com": {
-				"8.137.102.117": {
-					"desc": "阿里云中转"
-				},
-				"34.49.133.3": false,
-				"142.251.189.206": {
-					"desc": "自动地区官方"
-				}
-			},
-			"*gstatic.com": {
-				"8.137.102.117": true
-			},
-			"*youtube.com": {
-				"8.137.102.117": true
-			},
-			"*youtu.be": {
-				"8.137.102.117": true
-			},
-			"*.ggpht.com": {
-				"8.137.102.117": true
-			},
-			"i.ytimg.com": {
-				"8.137.102.117": true
-			},
-			"*youtube-nocookie.com": {
-				"8.137.102.117": true
-			},
-			"*blogger.com": {
-				"8.137.102.117": true
 			},
 			"external-content.duckduckgo.com": {
 				"20.43.160.189": true
@@ -1024,29 +822,6 @@
 			},
 			"*startpage.com": {
 				"67.63.58.139": true
-			},
-			"*twitter.com": {
-				"162.159.140.229": true,
-				"172.66.0.227": true
-			},
-			"x.com": {
-				"162.159.140.229": true,
-				"172.66.0.227": true
-			},
-			"*.x.com": {
-				"162.159.140.229": true,
-				"172.66.0.227": true
-			},
-			"t.co": {
-				"162.159.140.229": true,
-				"172.66.0.227": true
-			},
-			"*.t.co": {
-				"162.159.140.229": true,
-				"172.66.0.227": true
-			},
-			"*twimg.com": {
-				"146.75.72.157": true
 			},
 			"*facebook.com": {
 				"157.240.22.169": true
@@ -1476,7 +1251,7 @@
 				"208.80.153.240": true,
 				"185.15.58.240": true
 			},
-			"*.wiki*.org": {
+			"^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
 				"208.80.153.224": true,
 				"185.15.58.224": true
 			},
