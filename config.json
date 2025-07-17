@@ -1,6 +1,16 @@
 {
 	"server": {
 		"intercepts": {
+			"*character.ai":{
+				".*": {
+					"sni": "none"
+				}
+			},
+			"*eyny.com": {
+				".*": {
+					"sni": "www.baidu.com"
+				}
+			},
 			"_copilot.microsoft.com":{
 				".*": {
 					"sni": "www.azureedge.net"
@@ -205,7 +215,7 @@
 				  "desc": "谷歌字体库不需调整sni"
 				}
 			  },
-			  "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
+			  "^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
 				".*": {
 				  "sni": "www.google.cn"
 				}
@@ -301,6 +311,11 @@
 				}
 			},
 			"^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions|wikibooks).org$": {
+				".*": {
+				  "sni": "mediawiki.org"
+				}
+			},
+			"*w.wiki":{
 				".*": {
 				  "sni": "mediawiki.org"
 				}
@@ -659,29 +674,32 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"*eyny.com": {
+				"172.241.24.66": true
+			},
 			"copilot.microsoft.com":{
-				"2602:fc59:b0:64::cc4f:c5ed":true
+				"2602:fc59:11:64::cc4f:c5ed":true
 			},
 			"*gamer.com.tw": {
 				"104.16.223.104": true
 			},
 			"*claude.ai":{
-				"2602:fc59:b0:64::a04f:680a": true
+				"2602:fc59:11:64::a04f:680a": true
 			},
 			"*netflix.com":{
-				"2602:fc59:b0:64::2cf2:0da1": true
+				"2602:fc59:11:64::2cf2:0da1": true
 			},
 			"*disneyplus.com":{
-				"2602:fc59:b0:64::17c5:ea7c": true
+				"2602:fc59:11:64::17c5:ea7c": true
 			},
 			"disney.*.edge.bamgrid.com":{
-				"2602:fc59:b0:64::36e6:4744": true
+				"2602:fc59:11:64::36e6:4744": true
 			},
 			"*bilibili.tv":{
-				"2602:fc59:b0:64::6797:9785": true
+				"2602:fc59:11:64::6797:9785": true
 			},
 			"open.spotify.com":{
-				"2602:fc59:b0:64::9765:c32a": true
+				"2602:fc59:11:64::9765:c32a": true
 			},
 			"*.spotify.com":{
 				"2600:1901:1:7c5::": true
@@ -690,7 +708,7 @@
 				"13.35.185.106": true
 			},
 			"*behance.net":{
-				"2602:fc59:b0:64::9765:41c5": true
+				"2602:fc59:11:64::9765:41c5": true
 			},
 			"telegra.ph": {
 				"95.161.64.99": true,
@@ -742,7 +760,7 @@
 				"89.149.221.236": true
 			},
 			"*e-hentai.org": {
-				"172.67.2.238": true
+				"172.66.132.196": true
 			},
 			"*ehgt.org": {
 				"109.236.85.28": true
@@ -806,7 +824,7 @@
 				"172.253.122.206":"true",
 				"38.180.33.93":"true"
 			},
-			"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google)$": {
+			"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
 				"8.137.102.117": {
 					"desc": "阿里云中转"
 				},
@@ -1173,7 +1191,7 @@
 				"162.125.248.18": true
 			},
 			"*amazon.co.jp": {
-				"18.66.145.15": true
+				"13.35.219.115": true
 			},
 			"*etsy.com": {
 				"151.101.193.224": true
@@ -1233,7 +1251,7 @@
 				"162.159.138.60": true
 			},
 			"identity.flickr.com": {
-				"44.217.169.39": true
+				"54.197.29.41": true
 			},
 			"*flickr.com": {
 				"13.33.142.102": true
@@ -1252,6 +1270,10 @@
 				"185.15.58.240": true
 			},
 			"^.*(wikipedia|wikimedia|wikinews|wiktionary|wikiversity|wikidata|wikiquote|wikivoyage|wikifunctions).org$": {
+				"208.80.153.224": true,
+				"185.15.58.224": true
+			},
+			"*w.wiki":{
 				"208.80.153.224": true,
 				"185.15.58.224": true
 			},
