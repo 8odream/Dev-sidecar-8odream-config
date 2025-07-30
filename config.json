@@ -438,7 +438,7 @@
 					"sni": "www.baidu.com"
 				}
 			},
-			"^.*(cdn-telegram.org|web.telegram.org|telegram.org|tg.dev|t.me|telesco.pe)$": {
+			"^.*(cdn-telegram.org|web.telegram.org|telegram.org|telegram.me|tg.dev|t.me|telesco.pe)$": {
 				".*": {
 					"sni": "www.baidu.com"
 				}
@@ -454,6 +454,11 @@
 				}
 			},
 			"*discordapp.com": {
+				".*": {
+					"sni": "none"
+				}
+			},
+			"*discordapp.net": {
 				".*": {
 					"sni": "none"
 				}
@@ -1073,10 +1078,10 @@
 				"149.154.174.200": true
 			},
 			"*zws2*.web.telegram.org": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"*zws4*.web.telegram.org": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"web.telegram.org": {
 				"38.94.111.240": true
@@ -1085,19 +1090,22 @@
 				"149.154.170.200": true
 			},
 			"*telegram.org": {
-				"38.94.111.240": true
+				"136.244.94.246": true
+			},
+			"*telegram.me": {
+				"136.244.94.246": true
 			},
 			"*tg.dev": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"t.me": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"*.t.me": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"*telesco.pe": {
-				"38.94.111.240": true
+				"136.244.94.246": true
 			},
 			"*discord.com": {
 				"162.159.136.232": true
@@ -1107,6 +1115,9 @@
 			},
 			"*discordapp.com": {
 				"162.159.130.233": true
+			},
+			"*discordapp.net": {
+				"162.159.130.232": true
 			},
 			"assets.twitch.tv": {
 				"3.167.200.113": true
@@ -1173,7 +1184,7 @@
 				"162.159.152.17": true
 			},
 			"*v2ex.com": {
-				"172.67.35.211": true
+				"172.66.137.6": true
 			},
 			"*onedrive.live.com": {
 				"13.107.42.13": true
@@ -1251,7 +1262,7 @@
 				"162.159.138.60": true
 			},
 			"identity.flickr.com": {
-				"54.197.29.41": true
+				"13.223.178.105": true
 			},
 			"*flickr.com": {
 				"13.33.142.102": true
