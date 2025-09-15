@@ -1,6 +1,11 @@
 {
 	"server": {
 		"intercepts": {
+			"_www.ecosia.org":{
+				".*": {
+					"sni": "www.ecosia.org"
+				}
+			},
 			"*character.ai":{
 				".*": {
 					"sni": "none"
@@ -84,12 +89,22 @@
 					"desc": "资源404,但不影响文字加载,无法加载相关资源丢给彩蛋"
 				}
 			},
+			"itch.io":{
+				".*": {
+					"sni": "none"
+				}
+			},
 			"*233v2.com": {
 				".*": {
 					"sni": "www.baidu.com" 
 				}
 			},
 			"*.yahoo.com": {
+				".*": {
+					"sni": "none"
+				}
+			},
+			"s.yimg.com": {
 				".*": {
 					"sni": "none"
 				}
@@ -101,7 +116,7 @@
 			},
 			"images.prismic.io": {
 				".*": {
-					"sni": "www.baidu.com"
+					"sni": "imgix.net"
 				}
 			},
 			"api.fanbox.cc": {
@@ -580,41 +595,47 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"www.ecosia.org": {
+				"2001:67c:2960:6464::ac40:9647": true
+			},
 			"*eyny.com": {
 				"172.241.24.66": true
 			},
 			"copilot.microsoft.com":{
-				"2602:fc59:11:64::cc4f:c5ed":true
+				"2001:67c:2960:6464::cc4f:c5ed":true
 			},
 			"*gamer.com.tw": {
 				"104.16.223.104": true
 			},
 			"*claude.ai":{
-				"2602:fc59:11:64::a04f:680a": true
+				"2001:67c:2960:6464::a04f:680a": true
 			},
 			"*netflix.com":{
-				"2602:fc59:11:64::2cf2:0da1": true
+				"2001:67c:2960:6464::2cf2:0da1": true
 			},
 			"*disneyplus.com":{
-				"2602:fc59:11:64::17c5:ea7c": true
+				"2001:67c:2960:6464::17c5:ea7c": true
 			},
 			"disney.*.edge.bamgrid.com":{
-				"2602:fc59:11:64::36e6:4744": true
+				"2001:67c:2960:6464::36e6:4744": true
 			},
 			"*bilibili.tv":{
-				"2602:fc59:11:64::6797:9785": true
+				"2001:67c:2960:6464::6797:9785": true
 			},
 			"open.spotify.com":{
-				"2602:fc59:11:64::9765:c32a": true
+				"2001:67c:2960:6464::9765:c32a": true
 			},
 			"*.spotify.com":{
-				"2600:1901:1:7c5::": true
+				"2001:67c:2960:6464::23ba:e018": true
+			},
+			"itch.io":{
+				"45.79.115.66": true
 			},
 			"a5.behance.net":{
 				"13.35.185.106": true
 			},
 			"*behance.net":{
-				"2602:fc59:11:64::9765:41c5": true
+				"2001:67c:2960:6464::9765:41c5": true
 			},
 			"telegra.ph": {
 				"95.161.64.99": true,
@@ -625,18 +646,11 @@
 				"52.74.232.59": true,
 				"13.52.115.166": true
 			},
-			"guce.yahoo.com": {
-				"3.208.227.166": true,
-				"54.255.142.244": true,
-				"13.228.67.2": true,
-				"3.1.71.0": true
+			"_*.yahoo.com": {
+				"2001:67c:2960:6464::b4de:6a0b": true
 			},
-			"*.yahoo.com": {
-				"69.147.87.251": true,
-				"106.10.236.37": true,
-				"180.222.114.11": true,
-				"180.222.116.11": true,
-				"180.222.119.247": true
+			"_s.yimg.com": {
+				"2001:67c:2960:6464::b4de:6a0b": true
 			},
 			"cdn.jsdelivr.net": {
 				"104.16.89.20": true
@@ -902,31 +916,31 @@
 				"149.154.174.200": true
 			},
 			"*zws2*.web.telegram.org": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*zws4*.web.telegram.org": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"^.*\\.web.telegram.org$": {
 				"149.154.170.200": true
 			},
 			"*telegram.org": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*telegram.me": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*tg.dev": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"t.me": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*.t.me": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*telesco.pe": {
-				"136.244.94.246": true
+				"93.183.58.61": true
 			},
 			"*discord.com": {
 				"162.159.136.232": true
@@ -1062,7 +1076,7 @@
 				"162.159.138.60": true
 			},
 			"identity.flickr.com": {
-				"13.223.178.105": true
+				"52.6.22.65": true
 			},
 			"*flickr.com": {
 				"13.33.142.102": true
@@ -1071,7 +1085,7 @@
 				"199.232.196.193": true
 			},
 			"*thetvdb.com": {
-				"54.192.23.105": true
+				"13.3.222.88": true
 			},
 			"upload.wikimedia.org": {
 				"208.80.153.240": true,
