@@ -1,6 +1,11 @@
 {
 	"server": {
 		"intercepts": {
+			"*gelbooru.com": {
+				".*": {
+					"sni": "baidu.com"
+				}
+			},
 			"_www.ecosia.org":{
 				".*": {
 					"sni": "www.ecosia.org"
@@ -595,6 +600,9 @@
 			"*.bilibili.*": true
 		},
 		"preSetIpList": {
+			"*gelbooru.com": {
+				"108.181.143.72": true
+			},
 			"www.ecosia.org": {
 				"2001:67c:2960:6464::ac40:9647": true
 			},
@@ -725,16 +733,16 @@
 				"8.137.102.117": {
 					"desc": "阿里云中转"
 				},
-				"47.102.115.14":"true",
-				"194.87.31.227":"true",
-				"136.124.0.28":"true",
-				"136.124.0.29":"true",
-				"34.49.133.3":"true",
-				"142.251.189.206":"true",
-				"142.251.190.206":"true",
-				"172.217.204.206":"true",
-				"172.253.122.206":"true",
-				"38.180.33.93":"true"
+				"47.102.115.14":true,
+				"194.87.31.227":true,
+				"136.124.0.28":true,
+				"136.124.0.29":true,
+				"34.49.133.3":true,
+				"142.251.189.206":true,
+				"142.251.190.206":true,
+				"172.217.204.206":true,
+				"172.253.122.206":true,
+				"38.180.33.93":true
 			},
 			"^.*(youtube.com|gstatic.com|youtube.nocookie.com|youtu.be|ggpht.com|i.ytimg.com|blogger.com|doodles.google|about.google|android.com)$": {
 				"8.137.102.117": {
@@ -1123,6 +1131,8 @@
 	},
 	"proxy": {
 		"excludeIpList": {
+			//悠悠有品的图片地址
+			"*youpinimg.com": true,
 			"*.live.com": false,
 			"*steaminventoryhelper.com": true,
 			"*.chaoxing.com": true,
