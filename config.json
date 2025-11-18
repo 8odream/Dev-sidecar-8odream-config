@@ -1135,8 +1135,7 @@
 			"*.chaoxing.com": true,
 			"testzs.cn": true,
 			"*.zhihu.com": true,
-			"*.hdslb.*": true,
-			"*ali*": true
+			"*.hdslb.*": true
 		}
 	}
 }
