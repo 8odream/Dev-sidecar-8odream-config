@@ -1,0 +1,60 @@
+# DNS 设置
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    #- 127.0.0.1
+     - 223.5.5.5
+     - 114.114.114.114
+  nameserver:
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://8.8.8.8/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+
+
+proxy-groups:
+  - name: "DS直连"
+    type: select
+    proxies:
+      - "Dev-sidecar"
+  
+  # 仅在有其它节点时使用
+  # - name: "PROXY"
+  #   type: select
+  #   proxies:
+      #你的节点名称，以下仅作示范
+      #- 🇭🇰 香港 01
+      #- 🇭🇰 香港 02
+      #- 🇯🇵 日本 01
+      #- 🇯🇵 日本 02
+
+
+# 规则
+rules:
+  # DS处理不了的交给其它节点处理
+  # - DOMAIN-SUFFIX, chatgpt.com, PROXY
+  # - DOMAIN-SUFFIX, gateway.discord.gg, PROXY
+  # - DOMAIN-SUFFIX, googlevideo.com, PROXY
+  # - IP-CIDR, 91.108.56.0/22, PROXY
+  # - IP-CIDR, 91.108.4.0/22, PROXY
+  # - IP-CIDR, 91.108.8.0/22, PROXY
+  # - IP-CIDR, 91.108.16.0/22, PROXY
+  # - IP-CIDR, 91.108.12.0/22, PROXY
+  # - IP-CIDR, 149.154.160.0/20, PROXY
+  # - IP-CIDR, 91.105.192.0/23, PROXY
+  # - IP-CIDR, 91.108.20.0/22, PROXY
+  # - IP-CIDR, 185.76.151.0/24, PROXY
+  # - IP-CIDR6, 2001:b28:f23d::/48, PROXY
+  # - IP-CIDR6, 2001:b28:f23f::/48, PROXY
+  # - IP-CIDR6, 2001:67c:4e8::/48, PROXY
+  # - IP-CIDR6, 2001:b28:f23c::/48, PROXY
+  # - IP-CIDR6, 2a0a:f280::/32, PROXY
+
+  - MATCH, DS直连
+proxies:
+  - {"name":"Dev-sidecar","type":"http","server":"127.0.0.1","port":31181}
+# 你的其它节点
