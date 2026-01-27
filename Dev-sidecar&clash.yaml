@@ -53,8 +53,9 @@ rules:
   # - IP-CIDR6, 2001:67c:4e8::/48, PROXY
   # - IP-CIDR6, 2001:b28:f23c::/48, PROXY
   # - IP-CIDR6, 2a0a:f280::/32, PROXY
-
+  - PROCESS-NAME, dev-sidecar.exe, DIRECT
   - MATCH, DS直连
 proxies:
   - {"name":"Dev-sidecar","type":"http","server":"127.0.0.1","port":31181}
+
 # 你的其它节点
