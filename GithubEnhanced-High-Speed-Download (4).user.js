@@ -598,6 +598,83 @@ document.addEventListener("DOMContentLoaded", () => {
 				window.dispatchEvent(new Event('urlchange'))
 			});
 		}
+		// ======================================================================================
+    // 高级功能：劫持 Webpack 动态资源加载 (针对 wp-runtime)
+    // 原理：重写 HTMLScriptElement 和 HTMLLinkElement 的 src/href 属性 setter
+    // ======================================================================================
+    (function() {
+        const ASSET_CDN = 'https://github.githubassets.com/assets/';
+        
+        // 定义一个通用的路径修正函数
+        function rewriteUrl(url) {
+            if (!url) return url;
+            // 判断是否是 github 的 assets 路径 (特征：包含 /assets/ 且以 .js 或 .css 结尾)
+            // 很多镜像站的路径可能是 https://hub.fastgit.xyz/assets/chunk.js 或者 /assets/chunk.js
+            if (url.includes('/assets/') && (url.endsWith('.js') || url.endsWith('.css'))) {
+                try {
+                    // 提取文件名部分 (例如 wp-runtime-xxx.js)
+                    // 逻辑：找到 /assets/ 后面的所有内容
+                    const pathParts = url.split('/assets/');
+                    const fileName = pathParts.pop(); 
+                    
+                    // 强制返回官方 CDN 路径
+                    return ASSET_CDN + fileName;
+                } catch (e) {
+                    return url;
+                }
+            }
+            return url;
+        }
+
+        // 1. 劫持 Script 标签的 src 属性 (解决 JS 动态加载)
+        const rawScriptSrcDesc = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src');
+        Object.defineProperty(HTMLScriptElement.prototype, 'src', {
+            enumerable: true,
+            configurable: true,
+            get: function() {
+                return rawScriptSrcDesc.get.call(this);
+            },
+            set: function(newVal) {
+                const newUrl = rewriteUrl(newVal);
+                rawScriptSrcDesc.set.call(this, newUrl);
+            }
+        });
+
+        // 2. 劫持 Link 标签的 href 属性 (解决 CSS 动态加载)
+        const rawLinkHrefDesc = Object.getOwnPropertyDescriptor(HTMLLinkElement.prototype, 'href');
+        Object.defineProperty(HTMLLinkElement.prototype, 'href', {
+            enumerable: true,
+            configurable: true,
+            get: function() {
+                return rawLinkHrefDesc.get.call(this);
+            },
+            set: function(newVal) {
+                const newUrl = rewriteUrl(newVal);
+                rawLinkHrefDesc.set.call(this, newUrl);
+            }
+        });
+
+        // 3. 针对已经写在 HTML 里的静态标签，利用 MutationObserver 补漏
+        // (虽然劫持了 setter，但页面初始化的静态标签可能不走 setter，或者脚本注入慢了)
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                mutation.addedNodes.forEach(node => {
+                    if (node.tagName === 'SCRIPT' && node.src) {
+                        const fixed = rewriteUrl(node.src);
+                        if (fixed !== node.src) node.src = fixed;
+                    }
+                    if (node.tagName === 'LINK' && node.href) {
+                         const fixed = rewriteUrl(node.href);
+                         if (fixed !== node.href) node.href = fixed;
+                    }
+                });
+            });
+        });
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+
+        console.log('Github Enhanced: Webpack dynamic loading interceptor activated.');
+    })();
+    // ======================================================================================
 	})();
 	console.log(`ds_github_monkey_${ds_github_monkey_version}: completed`)
 })
